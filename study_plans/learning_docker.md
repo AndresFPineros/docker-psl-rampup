@@ -90,6 +90,7 @@ You already know a bit about what is an image and a container, but check this so
 
 *Questions you should figure out:*
 - What is the output of building a Dockerfile?
+- how do you version docker images? 
 - What is the output of running an image?
 - What is the output of commiting a container and why would we use this?
 - What is a Docker Registry?
@@ -101,4 +102,20 @@ You already know a bit about what is an image and a container, but check this so
 TODO
 
 ## Persisting Data with Containers
-TODO
+all files created inside a container are stored on a writable container layer. This means that the  data doesn’t persist when that container
+no longer exists, and it can be difficult to get the data out of the container if another process needs it. In many cases we want to keep this data for
+later analyze it or let another process to use it. Docker offers 2 main  mechanisms for allowing data persistance: volumes and bind mounts. If you’re running Docker on Linux you can also use a tmpfs mount. If you’re running Docker on Windows you can also use a named pipe.
+
+Please Check: 
+https://docs.docker.com/storage/
+for a general overview on docker storage.
+
+go deeper on volumes : https://docs.docker.com/storage/volumes/
+go deeper on bind mounts: https://docs.docker.com/storage/bind-mounts/
+it is recommended to follow the examples on both pages.
+
+*Questions you should figure out:*
+- what us a volmue? what is a bind mount?
+- what are the differences between a volume and a mount bind?
+- what are some advantages and good use cases for docker volumes and bind mounts? 
+- how to create a volume and a bind mount? 
