@@ -99,7 +99,10 @@ You already know a bit about what is an image and a container, but check this so
 - Can we have a private Docker Registry? Checkout what AWS ECR is.
 
 ## Debugging a running container
-TODO
+Docker offers some debugging mechanisms that can be useful for debugging you container(s).
+- Research how to read the logs of a container
+- Research how to connect to a container and execute commands inside it. (docker exec command)
+- Research how to debug code running inside a docker container on execution time (you can follow the attached guide)
 
 ## Persisting Data with Containers
 all files created inside a container are stored on a writable container layer. This means that the  data doesn’t persist when that container
@@ -110,12 +113,12 @@ Please Check:
 https://docs.docker.com/storage/
 for a general overview on docker storage.
 
-go deeper on volumes : https://docs.docker.com/storage/volumes/
+go deeper on volumes : https://docs.docker.com/storage/volumes/ 
 go deeper on bind mounts: https://docs.docker.com/storage/bind-mounts/
 it is recommended to follow the examples on both pages.
 
 *Questions you should figure out:*
-- what us a volmue? what is a bind mount?
+- what is a volmue? what is a bind mount?
 - what are the differences between a volume and a mount bind?
 - what are some advantages and good use cases for docker volumes and bind mounts? 
 - how to create a volume and a bind mount? 
