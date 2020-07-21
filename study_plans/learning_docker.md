@@ -45,9 +45,8 @@ Before containers, Virtual Machines were the main tool to run isolated processes
 - What are some advantages of Virtual Machines over Containers?
 - Why are containers lighter than Virtual Machines?
 - Why are containers faster to start than Virtual Machines?
-- Why are Virtual Machines more secure that containers?
+- Why are Virtual Machines more secure than containers?
 - Are containers better than Virtual Machines?
-- Why should developers learn Docker?
 
 ## The Dockerfile
 
@@ -72,21 +71,6 @@ Check these sources:
 *Questions you should figure out:*
 - If the docker daemon is an HTTP API, does it mean that there are other clients besides the command-line tool? Things like SDKs?
 - If the docker daemon is an HTTP API, does it mean I can call a remote docker-daemon using the client from my machine?
-
-## Lifecycle of a Docker container
-You already know a bit about what is an image and a container, but check this source to actually learn the whole lifecycle of a Docker container.
-
-![](../images/docker-lifecycle.png)
-
-*Questions you should figure out:*
-- What is the output of building a Dockerfile?
-- how do you version docker images? 
-- What is the output of running an image?
-- What is the output of commiting a container and why would we use this?
-- What is a Docker Registry?
-- What is the difference between a Registry and a Repository?
-- What is the difference between an official repository and a non-oficial repository?
-- Can we have a private Docker Registry? Checkout what AWS ECR is.
 
 ## Debugging a running container
 Docker offers some debugging mechanisms that can be useful for debugging you container(s).
