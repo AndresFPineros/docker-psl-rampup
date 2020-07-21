@@ -24,11 +24,15 @@ Windows users can use Powershell to execute `docker` commands.
 ## Deploying a first Docker container
   ### Check we can run a container
   ```
-  docker run -d -p 8080:80 -n nginx
+  docker run -d -p 8080:80 --name nginx nginx:latest
   ```
   Open your browser and open http://localhost:8080
 
-  If you can see the Nginx webpage it means that Docker is working fine and you just deployed your first application using Docker.
+  If you can see the Nginx webpage it means that Docker is working fine and you just deployed your first application using Docker. Remove the container:
+
+  ```
+  docker rm -f nginx
+  ```
 
   ### Having issues with local installation?
 
@@ -37,7 +41,7 @@ Windows users can use Powershell to execute `docker` commands.
   - [Katacoda Docker Playground](https://www.katacoda.com/courses/docker/playground)
   - [Docker official Playground](https://labs.play-with-docker.com/)
 
-  We like Katacoda because the have many interactive tutorials for Docker:
+  We like Katacoda because they have many interactive tutorials for Docker:
   
   - [Katacoda Docker Interactive Tutorials](https://www.katacoda.com/courses/docker)
 
@@ -47,7 +51,6 @@ We want you to get familiar with the sources of information that'll teach you ab
   - [Docker Getting Started Docs](https://docs.docker.com/get-started/overview/) (Some concepts about Docker)
   - [Katacoda](https://www.katacoda.com/courses/docker) (Super fun interactive tutorials)
   - [Pluralsight Deep Dive Free Course](https://www.pluralsight.com/courses/docker-deep-dive-update) (Deep Dive into Docker - It is advanced but not too much.)
-  - [Docker Curriculum](https://docker-curriculum.com/) (A full rampup in itself to deploy a web application)
   - [Docker Compose Docs](https://docs.docker.com/compose/) (Documentation for orchestration - Check it out when you reach the orchestration section)
 
 You don't have to read everything, wer'll point you to these docs when necessary but you should also stay curious and read.
