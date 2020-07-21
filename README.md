@@ -24,14 +24,14 @@ Even though the Ramp Up can be ran from a Windows or a Linux Machine, we'll focu
 - What is the Docker Engine?
 - Lifecycle of a Docker container.
 - Exposing your application's port.
-- Debugging a running container.
 - Persisting Data with Containers.
 #### Challenge
 - Create a Dockerhub account.
 - Create a public repository for a custom image.
 - Create a Dockerfile for an Nginx image pre-packed with a HTML file saying "Hello World"
-- Push the image
-- Remove the image locally
+- Push the image to the repository with the version 1.0.0
+- Run the image locally binded to the port 8080 of your machine
+- Open the application from your browser.
 -----
 
 ### Stage: Learning Docker for .Net
@@ -39,13 +39,15 @@ Even though the Ramp Up can be ran from a Windows or a Linux Machine, we'll focu
 - Docker images for .Net Core.
 - Dockerfile examples for .Net Core.
 #### Challenge
-- Create a basic web application using the DotnetCore web framework. The application should have a simple controller that handles the /helloworld endpoint. Dockerize the application using the official Docker images provided by Microsoft.
-- Expose the application to your local machine using ports and access the endpoint from your browser.
+- Create a basic web application using the DotnetCore web framework. The application should have a simple controller that handles the /helloworld endpoint.
+- Dockerize the application using the official Docker images provided by Microsoft. Make an image that receives the application artifact using COPY.
 - Push the application to Dockerhub.
+- Make another image that copies the whole project and builds it inside Docker. Keep the image as small as possible using multi-stage Docker builds.
+- Expose the application to your local machine using ports and access the endpoint from your browser.
 -----
 
 ### Stage: Orchestration with Docker-Compose
-#### Study Plan
+#### [Study Plan](study_plans/docker_compose.md)
 - Docker Networks
 - Communicating two containers with links
 - What is docker-compose?
