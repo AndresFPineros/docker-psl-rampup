@@ -39,6 +39,7 @@ And then we just run the command in the folder with the docker-compose.yml file:
 ```
 docker-compose up
 ```
+Several commands were reduced to a single file and a single command. Pretty awesome.
 
 ## Docker-compose concepts: serivcename, replicas, service and stacks.
 
