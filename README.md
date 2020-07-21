@@ -1,15 +1,11 @@
 # Docker PSL Ramp Up for .Net Developers
 
 ## Introduction
-The purpose of this Ramp Up is to provide a set of challenges that will allow .Net Developers to create and deploy their own applications using Docker while following the best practices and leveraging the great set of Docker Tools from Vistual Studio.
+The purpose of this Ramp Up is to provide a set of challenges that will allow .Net Developers to create and deploy their own applications using Docker while following the best practices and leveraging the set of Docker Tools from Vistual Studio.
 
 
 ## Considerations
-1. Even though the Ramp Up can be ran from a Windows or a Linux Machine, we'll focus on Linux Containers because they are widely used compared to Windows Containers and are probably what most projects in cloud environments use.
-
-2. There's plenty information about Docker out there and we want you to take advantage of it. This Ramp Up isn't the only source of information you should use, this is mainly a guide for you to know which are the relevant aspects of Docker and the order in which they should be learned. To promote exploring new sources of information, the guide contains several references to sites like Katakoda and Pluralsight that we consider important.
-
-3. Docker can be as complex as you want it to be, so we'll focus on a "user experience" instead of a "technical deep dive experience". This means that we'll be able to use Docker without digging too much into technical aspects like the Kernel, Namespaces and CGroups, which are important but not critical from a development standpoint. Advanced topics will be documented in the last stage of this guide anyways.
+Even though the Ramp Up can be ran from a Windows or a Linux Machine, we'll focus on Linux Containers because they are widely used compared to Windows Containers and are probably what most projects in cloud environments use.
 
 -----
 
