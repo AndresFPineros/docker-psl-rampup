@@ -30,17 +30,22 @@ The purpose of this Ramp Up is to provide a set of challenges that will allow .N
 - Exposing your application's port.
 - Debugging a running container.
 - Persisting Data with Containers.
+#### Challenge
+- Create a Dockerhub account.
+- Create a public repository for a custom image.
+- Create a Dockerfile for an Nginx image pre-packed with a HTML file saying "Hello World"
+- Push the image
+- Remove the image locally
 -----
 
 ### Stage: Learning Docker for .Net
-#### Study Plan
+#### [Study Plan](study_plans/dotnet_docker.md)
 - Docker images for .Net Core.
 - Dockerfile examples for .Net Core.
-- Pass environment variables to your .Net Core application.
-- .Net Core Docker best practices.
 #### Challenge
 - Create a basic web application using the DotnetCore web framework. The application should have a simple controller that handles the /helloworld endpoint. Dockerize the application using the official Docker images provided by Microsoft.
 - Expose the application to your local machine using ports and access the endpoint from your browser.
+- Push the application to Dockerhub.
 -----
 
 ### Stage: Orchestration with Docker-Compose
