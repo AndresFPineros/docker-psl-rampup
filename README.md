@@ -9,17 +9,17 @@ Even though the Ramp Up can be ran from a Windows or a Linux Machine, we'll focu
 
 -----
 
-### Stage: Getting Started
+### Stage 1: Getting Started
 
-#### [Study Plan](study_plans/getting_started.md)
+#### [Study Plan](study_plans/stage1_getting_started.md)
 - Installing Docker
 - Deploying a first Docker container
 - Get to know the sources of information.
   
 -----
 
-### Stage: Learning Docker
-#### [Study Plan](study_plans/learning_docker.md)
+### Stage 2: Learning Docker
+#### [Study Plan](study_plans/stage2_learning_docker.md)
 - What is a Docker container?
 - What is the Docker Engine?
 - Lifecycle of a Docker container.
@@ -32,41 +32,40 @@ Even though the Ramp Up can be ran from a Windows or a Linux Machine, we'll focu
 - Push the image to the repository with the version 1.0.0
 - Run the image locally binded to the port 8080 of your machine
 - Open the application from your browser.
+
 -----
 
-### Stage: Learning Docker for .Net
-#### [Study Plan](study_plans/dotnet_docker.md)
+### Stage 3: Learning Docker for .Net
+#### [Study Plan](study_plans/stage3_dotnet_docker.md)
 - Docker images for .Net Core.
 - Dockerfile examples for .Net Core.
 #### Challenge
 - Create a basic web application using the DotnetCore web framework. The application should have a simple controller that handles the /helloworld endpoint.
-- Dockerize the application using the official Docker images provided by Microsoft. Make an image that receives the application artifact using COPY.
+- Dockerize the application using the official Docker images provided by Microsoft. Make Dockerfile that receives the pre-built application artifact using COPY.
 - Push the application to Dockerhub.
-- Make another image that copies the whole project and builds it inside Docker. Keep the image as small as possible using multi-stage Docker builds.
+- Make another Dockerfile that copies the whole project and builds it inside Docker. Keep the image as small as possible using multi-stage Docker builds.
 - Expose the application to your local machine using ports and access the endpoint from your browser.
+
 -----
 
-### Stage: Orchestration with Docker-Compose
-#### [Study Plan](study_plans/docker_compose.md)
+### Stage 4: Orchestration with Docker-Compose
+#### [Study Plan](study_plans/stage4_docker_compose.md)
 - Docker Networks
 - Communicating two containers with links
 - What is docker-compose?
-- Docker-compose concepts: serivcename, replicas, service and stacks.
-- Importance of Docker-Compose in development environments.
 - Docker-Compose vs Kubernetes.
 #### Challenge
-- Modify the previous application you created to include the logic to query a simple attribute from a MySQL or SQL Server database. Make sure your application is stateless because it has to scale up.
-- Create a docker-compose deployment that creates the application and database with a single `docker-compose up`. You should connect the application to the database somehow.
+- Modify the previous application you created to include the logic to query a simple attribute from a MySQL or SQL Server database.
+- We should have 3 application replicas and a single database.
+- Create a docker-compose deployment that executes the application and database with a single `docker-compose up`.
 - The database should be persitent, this means that you should be able to remove the container without loosing the data.
-- Increase the amount of replicas of your service to 3.
 
 -----
 
-### Stage: Learning Visual Studio Tools for Docker
+### Stage 5: Learning Visual Studio Tools for Docker
 #### Objectives
 #### Study Plan
 - Install Visual Studio Tools for Docker
-- Explore Visual Studio Tools for Docker
 - Autogenerate Dockerfile for application.
 - Autogenerate Docker-Compose file for application.
 #### Challenge
@@ -75,7 +74,7 @@ Even though the Ramp Up can be ran from a Windows or a Linux Machine, we'll focu
 
 -----
 
-### Stage: Going Back to Advanced Topics
+### Stage 6: Going Back to Advanced Topics
 #### Study Plan
 - Best practices
   - Build Optimization
