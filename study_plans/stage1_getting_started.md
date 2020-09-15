@@ -21,33 +21,40 @@ Windows users can use Powershell to execute `docker` commands.
   ```
 
 
-## Deploying a first Docker container
-  ### Check we can run a container
+## Validate if the local installation was successful
   ```
-  docker run -d -p 8080:80 -n nginx
+  docker run -d -p 8080:80 --name nginx nginx:latest
   ```
   Open your browser and open http://localhost:8080
 
-  If you can see the Nginx webpage it means that Docker is working fine and you just deployed your first application using Docker.
+  If you can see the Nginx webpage it means that Docker is working fine and you just deployed your first application using Docker. Remove the container:
 
-  ### Having issues with local installation?
+  ```
+  docker rm -f nginx
+  ```
 
-  Are you having issues installing Docker but you want to start playing with it? Don't worry, there are plenty Docker Playgrounds Online that are free. They are very easy to use!
+## Sign up to Docker Hub
+
+[Sign up to Docker Hub here, but first, read the warning below.](https://hub.docker.com/signup)
+
+**WARNING:** Please keep in mind that the free tier of Dockerhub makes your data public. DO NOT upload anything related to internal or customer projects to Dockerhub unless it is a paid private account. It is fine to push test images to Dockerhub as long as they don't contain secrets or any type of sensitive data. It is very common for people to make this type of mistakes.
+
+## Online Environments to Play Around
+  Here are some online environments that will allow you to run Docker tests without having to run commands in your local machine. This is great whenever you want to experiment with the unknown.
 
   - [Katacoda Docker Playground](https://www.katacoda.com/courses/docker/playground)
   - [Docker official Playground](https://labs.play-with-docker.com/)
 
-  We like Katacoda because the have many interactive tutorials for Docker:
-  
-  - [Katacoda Docker Interactive Tutorials](https://www.katacoda.com/courses/docker)
+  ### Interactive Tutorials
 
-## Get to know the sources of information.
-We want you to get familiar with the sources of information that'll teach you about Docker. Take some time to check them out:
+  - [Katacoda Docker Interactive Tutorials](https://www.katacoda.com/courses/docker)
+  - [Dockerlabs](http://dockerlabs.collabnix.com/) <- This one is amazing. We'll constantly reference it. If you want, you can use this one as a guide for your whole learning process.
+  - [Learn2torials](https://learn2torials.com/category/docker) <- This one is also pretty good.
+
+## Official Documentation
   - [Docker Engine Docs](https://docs.docker.com/engine/) (This is the main Docker Engine documentation)
   - [Docker Getting Started Docs](https://docs.docker.com/get-started/overview/) (Some concepts about Docker)
-  - [Katacoda](https://www.katacoda.com/courses/docker) (Super fun interactive tutorials)
-  - [Pluralsight Deep Dive Free Course](https://www.pluralsight.com/courses/docker-deep-dive-update) (Deep Dive into Docker - It is advanced but not too much.)
-  - [Docker Curriculum](https://docker-curriculum.com/) (A full rampup in itself to deploy a web application)
+
   - [Docker Compose Docs](https://docs.docker.com/compose/) (Documentation for orchestration - Check it out when you reach the orchestration section)
 
-You don't have to read everything, wer'll point you to these docs when necessary but you should also stay curious and read.
+You don't have to read everything, we'll point you to these docs when necessary but you should also stay curious and read.
